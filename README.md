@@ -1,13 +1,17 @@
 # Lab8_202001425
-#Name - Kashish Shroff
-#ID - 202001425
 
-###Lab Exercises
-###1. Create a new Eclipse project, and within the project create a package.
+#
+# Name - Kashish Shroff
+# ID - 202001425
+
+# Lab Exercises
+
+## 1. Create a new Eclipse project, and within the project create a package.
 ![ss1](https://user-images.githubusercontent.com/75682006/233599845-fc64836d-0440-4f03-abab-bbf18a05fa58.png)
 
 
-###2.Method for testing the Boa class's behaviour
+### 2.Method for testing the Boa class's behaviour:
+```
 import org.junit.Assert;
 import org.junit.Test;
 public class BoaTest {
@@ -32,10 +36,14 @@ public class BoaTest {
     Assert.assertFalse(largeBoa.fitsInCage(10));
   }
 }
+```
+
 ![ss2](https://user-images.githubusercontent.com/75682006/233599536-c0c7c332-1000-48d6-bac4-6ddd87acdb95.png)
+</br>
 
-###3. Modified setUp() method in the BoaTest class :
+### 3. Modified setUp() method in the BoaTest class :
 
+```
 public class BoaTest {
     private Boa jen;
     private Boa ken;
@@ -48,9 +56,13 @@ public class BoaTest {
     
     // write test methods here
 }
-![ss3](https://user-images.githubusercontent.com/75682006/233599194-a5995425-d60f-46d1-b5bd-9a71af3b814d.png)
+```
 
-###4. Modified testIsHealthy() method in the BoaTest class :
+![ss3](https://user-images.githubusercontent.com/75682006/233599194-a5995425-d60f-46d1-b5bd-9a71af3b814d.png)
+</br>
+
+### 4. Modified testIsHealthy() method in the BoaTest class :
+```
 @Test
 public void testIsHealthy() {
     // check that jen is not healthy
@@ -59,8 +71,11 @@ public void testIsHealthy() {
     // check that ken is healthy
     assertTrue(ken.isHealthy());
 }
+```
 
-###5. Modified testFitsInCage() method in the BoaTest class :
+### 5. Modified testFitsInCage() method in the BoaTest class :
+
+```
 @Test
 public void testFitsInCage() {
     // Test for jen
@@ -73,11 +88,15 @@ public void testFitsInCage() {
     assertTrue(ken.fitsInCage(3)); // cage length is equal to length of boa
     assertTrue(ken.fitsInCage(4)); // cage length is greater than length of boa
 }
+```
+</br>
 
-###6. Running test cases
+### 6. Running test cases
 ![ss](https://user-images.githubusercontent.com/75682006/233600596-0416eb4c-d73a-40a0-8588-fecd7447c831.png)
 
-###7. The Boa class has been updated to include the new lengthInInches() method:
+
+### 7. The Boa class has been updated to include the new lengthInInches() method:
+```
 public class Boa {
     private String name;
     private int length; // the length of the boa, in feet
@@ -105,9 +124,10 @@ public class Boa {
         return this.length * 12;
     }
 }
+```
 
-Here is an illustration of a new test case for the lengthInInches() method in the BoaTest class:
-
+### Here is an illustration of a new test case for the lengthInInches() method in the BoaTest class:
+```
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
@@ -128,8 +148,9 @@ public class BoaTest {
         assertEquals(36, ken.lengthInInches());
     }
 }
+```
 
 This new test case verifies that each of the Boa objects created in the setUp() function returns the expected value when the lengthInInches() method is called on it. The expected number and the actual value returned by the lengthInInches() method are compared using the assertEquals() method. This test function should be executed by JUnit, according to the @Test annotation.
-
+</br>
 
 
