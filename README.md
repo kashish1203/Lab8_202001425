@@ -91,7 +91,7 @@ public void testFitsInCage() {
 ```
 </br>
 
-### 6. Running test cases
+### 6. Test Results
 ![ss](https://user-images.githubusercontent.com/75682006/233600596-0416eb4c-d73a-40a0-8588-fecd7447c831.png)
 
 After running the tests, the JUnit pane displays a green bar indicating that all tests have passed.
