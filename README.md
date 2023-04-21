@@ -94,6 +94,8 @@ public void testFitsInCage() {
 ### 6. Running test cases
 ![ss](https://user-images.githubusercontent.com/75682006/233600596-0416eb4c-d73a-40a0-8588-fecd7447c831.png)
 
+After running the tests, the JUnit pane displays a green bar indicating that all tests have passed.
+</br>
 
 ### 7. The Boa class has been updated to include the new lengthInInches() method:
 ```
